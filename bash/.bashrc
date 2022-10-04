@@ -40,8 +40,6 @@ eval "$(starship init bash)"
 # aliases
 ###########
 
-alias :q='exit' # use vim keybinding to exit the terminal
-
 # listing, copying, moving and deleting
 alias ls='ls --color=auto'
 alias ll='ls -al'
@@ -63,6 +61,8 @@ alias ga='git add'
 alias gaa='git add .'
 alias gc='git commit -m'
 alias gac='git add . && git commit -m' # only when sure
+alias gp='git push'
+alias gpl='git pull'
 
 # system update
 alias dnf='sudo dnf'
