@@ -31,7 +31,7 @@ unset rc
 # ###############
 
 # flutter sdk 
-export PATH="$PATH:$HOME/dev/flutter/bin"
+export PATH="$PATH:$HOME/development/flutter/bin"
 
 # command prompt
 eval "$(starship init bash)"
