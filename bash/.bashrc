@@ -66,4 +66,4 @@ alias gpl='git pull'
 
 # system update
 alias dnf='sudo dnf'
-alias update='sudo dnf update -y && flatpak update -y'
+alias dnfup='sudo dnf update -y && flatpak update -y'
