@@ -12,3 +12,5 @@ set shiftwidth=4
 
 set cursorline
 hi Cursorline term=none cterm=none ctermbg=black
+" prevent underlining the line number
+hi CursorLineNr cterm=none
