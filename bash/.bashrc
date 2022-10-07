@@ -26,34 +26,35 @@ fi
 
 unset rc
 
-##################
-# my extra stuff
-# ###############
+########################
+### MY EXTRA CONFIGS ###
+########################
 
 # flutter sdk 
 export PATH="$PATH:$HOME/development/flutter/bin"
 
-# command prompt
+# Starship.rs prompt
 eval "$(starship init bash)"
 
-###########
-# aliases
-###########
+### ALIASES ###
 
-# listing, copying, moving and deleting
+# listing operation
 alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
+
+# interactive operations
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
-# change or make directories
+# changing directories
 alias ..='cd ..'
-alias down='cd ~/Downloads'
-alias docs='cd ~/Documents'
-alias dev='cd ~/dev'
-alias mkdir='mkdir -pv' # create parent dir by default
+alias .2='cd ../..'
+alias .3='cd ../../..'
+
+# making directories 
+alias mkdir='mkdir -pv' 
 
 # git 
 alias gs='git status'
@@ -65,6 +66,10 @@ alias gclone='git clone'
 alias gp='git push'
 alias gpl='git pull'
 
-# system update
+# DNF package manager and Flatpak
 alias dnf='sudo dnf'
+alias dnfi='sudo dnf install'
+alias dnfrm='sudo dnf remove'
 alias dnfup='sudo dnf update -y && flatpak update -y'
+alias flati='flatpak install'
+alias flatrm='flatpak remove'
