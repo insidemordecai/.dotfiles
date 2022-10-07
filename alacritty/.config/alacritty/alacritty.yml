@@ -6,8 +6,8 @@ window:
     lines: 24
   opacity: 0.95
   padding:
-    x: 18
-    y: 16
+    x: 8
+    y: 8
   dynamic_padding: false
   decorations: none
 
@@ -21,3 +21,56 @@ font:
 cursor:
   style:
     blinking: Always
+
+# color schemes
+schemes:
+  # One Dark by Atom
+  one-dark: &one-dark
+    primary:
+      background: '#282c34'
+      foreground: '#abb2bf'
+    cursor:
+    text:       CellBackground
+    cursor:     '#528bff' # syntax-cursor-color
+  selection:
+    text:       CellForeground
+    background: '#3e4451' # syntax-selection-color
+  normal:
+    black:      '#5c6370' # mono-3
+    red:        '#e06c75' # red 1
+    green:      '#98c379'
+    yellow:     '#e5c07b' # orange 2
+    blue:       '#61afef'
+    magenta:    '#c678dd'
+    cyan:       '#56b6c2'
+    white:      '#828997' # mono-2
+
+  # Dracula
+  dracula: &dracula
+    primary:
+      background: '#282a36'
+      foreground: '#f8f8f2'
+    normal:
+      black:   '#000000'
+      red:     '#ff5555'
+      green:   '#50fa7b'
+      yellow:  '#f1fa8c'
+      blue:    '#caa9fa'
+      magenta: '#ff79c6'
+      cyan:    '#8be9fd'
+      white:   '#bfbfbf'
+    bright:
+      black:   '#575b70'
+      red:     '#ff6e67'
+      green:   '#5af78e'
+      yellow:  '#f4f99d'
+      blue:    '#caa9fa'
+      magenta: '#ff92d0'
+      cyan:    '#9aedfe'
+      white:   '#e6e6e6' 
+
+# set default color scheme
+colors: *dracula
+
+key_bindings:
+  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
