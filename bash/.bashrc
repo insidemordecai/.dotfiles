@@ -60,6 +60,7 @@ alias ga='git add'
 alias gaa='git add .'
 alias gc='git commit -m'
 alias gac='git add . && git commit -m' # only when sure
+alias gclone='git clone'
 alias gp='git push'
 alias gpl='git pull'
 
