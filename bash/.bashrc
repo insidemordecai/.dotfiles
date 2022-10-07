@@ -40,10 +40,11 @@ eval "$(starship init bash)"
 # aliases
 ###########
 
-# listing, moving and deleting
+# listing, copying, moving and deleting
 alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
+alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
