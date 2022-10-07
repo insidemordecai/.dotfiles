@@ -6,6 +6,7 @@ syntax on
 set ignorecase smartcase
 set incsearch
 set nohlsearch " remove highlight after completing search
+set paste
 
 set tabstop=4 softtabstop=4
 set shiftwidth=4
