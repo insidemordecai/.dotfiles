@@ -12,6 +12,6 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 
 set cursorline
-hi Cursorline term=none cterm=none ctermbg=black
-" prevent underlining the line number
-hi CursorLineNr cterm=none
+hi Cursorline term=none cterm=none ctermbg=8
+hi CursorLineNr cterm=none ctermbg=8
+" check https://github.com/NLKNguyen/papercolor-theme for colour numbers
