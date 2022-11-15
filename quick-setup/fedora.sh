@@ -17,9 +17,9 @@ echo "ADDING FLATHUB REPO..."
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 echo "INSTALLING MEDIA CODECS..."
-sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-sudo dnf groupupdate sound-and-video
-sudo dnf group upgrade --with-optional Multimedia
+sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y
+sudo dnf groupupdate sound-and-video -y
+sudo dnf group upgrade --with-optional Multimedia -y
 
 echo "LAST STEP"
 
