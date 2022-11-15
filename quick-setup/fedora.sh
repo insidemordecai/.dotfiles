@@ -18,7 +18,7 @@ echo ""
 
 echo "ADDING FLATHUB REPO..."
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-echo ""echo ""
+echo ""
 
 echo "INSTALLING MEDIA CODECS..."
 sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y
