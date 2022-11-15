@@ -50,11 +50,18 @@ mv ComicMono* Comic-Mono/
 mv Comic-Mono/ ~/.local/share/fonts/
 echo ""
 
-echo "LAST STEP"
-
 echo "SETTING UP ADW-GTK3"
 flatpak install org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
 sudo dnf copr enable nickavem/adw-gtk3 -y
 sudo dnf install adw-gtk3 -y
+echo ""
+
+echo "LAST STEP"
+
+echo "SETTING UP CODING ENVIRONMENT/CONFIG FILES"
+mkdir ~/development
+mkdir ~/programming
+cd
+git clone https://github.com/insidemordecai/.dotfiles.git
 
 echo "DONE"
