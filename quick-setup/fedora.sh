@@ -21,8 +21,6 @@ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=Pack
 sudo dnf groupupdate sound-and-video -y
 sudo dnf group upgrade --with-optional Multimedia -y
 
-echo "LAST STEP"
-
 echo "INSTALLING EXTRA FONTS..."
 sudo dnf install fira-code-fonts 'mozilla-fira*' 'google-roboto*' -y
 
@@ -42,5 +40,12 @@ curl -O https://dtinth.github.io/comic-mono-font/ComicMono-Bold.ttf
 mkdir Comic-Mono
 mv ComicMono* Comic-Mono/
 mv Comic-Mono/ ~/.local/share/fonts/
+
+echo "LAST STEP"
+
+echo "SETTING UP ADW-GTK3"
+flatpak install org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
+sudo dnf copr enable nickavem/adw-gtk3 -y
+sudo dnf install adw-gtk3 -y
 
 echo "DONE"
