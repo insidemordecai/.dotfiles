@@ -28,6 +28,12 @@ rm nautilus-open-any-terminal -rf
 sudo dnf install starship
 echo ""
 
+echo "INSTALLING GH CLI"
+sudo dnf install 'dnf-command(config-manager)' -y
+sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+sudo dnf install gh -y
+echo ""
+
 echo "INSTALLING BRAVE BROWSER"
 sudo dnf install dnf-plugins-core -y
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
