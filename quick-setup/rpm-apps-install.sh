@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo "INSTALLING GNOME TWEAKS, ALACRITTY, STEAM, HTOP, GTHUMB AND SOLAAR"
-sudo dnf install -y gnome-tweaks alacritty steam htop gthumb solaar
+echo "INSTALLING GNOME TWEAKS, ALACRITTY, STEAM, HTOP, GTHUMB, SOLAAR, VIM, AUTOJUMP"
+sudo dnf install -y gnome-tweaks alacritty steam htop gthumb solaar vim autojump
 echo ""
 
 echo "INSTALLING VS CODE"
@@ -11,21 +11,19 @@ sudo dnf update -y
 sudo dnf install code -y
 echo ""
 
-echo "INSTALLING NAUTILUS-OPEN-ANY-TERMINAL AND STARSHIP - TO WORK WITH ALACRITTY"
+echo "INSTALLING NAUTILUS-OPEN-ANY-TERMINAL"
 sudo dnf install nautilus-python -y
 sudo dnf install pip -y
 pip install nautilus-open-any-terminal
-git clone https://github.com/Stunkymonkey/nautilus-open-any-terminal.git
-cd nautilus-open-any-terminal/
 nautilus -q	# kill nautilus to load new extension
-sudo tools/update-extension-system.sh install  # for a system-wide install/incase nautilus -q doesn't work
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal alacritty
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal keybindings '<Ctrl><Alt>t'
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal new-tab true
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal flatpak system
-cd ..
-rm nautilus-open-any-terminal -rf
-sudo dnf install starship
+echo ""
+
+echo "INSTALLING STARSHIP - COMMAND PROMPT"
+curl -sS https://starship.rs/install.sh | sh
 echo ""
 
 echo "INSTALLING GH CLI"
