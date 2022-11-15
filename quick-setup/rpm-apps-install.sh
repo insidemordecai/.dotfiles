@@ -1,7 +1,13 @@
 #!/bin/bash
 
-echo "Installing Tweaks, Alacritty, VS Code, Steam, htop, gThumb, Solaar"
-sudo dnf install -y gnome-tweaks alacritty code steam htop gthumb solaar
+echo "Installing Tweaks, Alacritty, Steam, htop, gThumb, Solaar"
+sudo dnf install -y gnome-tweaks alacritty steam htop gthumb solaar
+
+echo "Installing VS Code"
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+sudo dnf update -y
+sudo dnf install code -y
 
 echo "Installing nautilus-open-any-terminal and starship - to work with Alacritty"
 sudo dnf install nautilus-python -y
