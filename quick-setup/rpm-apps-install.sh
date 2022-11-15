@@ -11,6 +11,7 @@ sudo dnf install code -y
 
 echo "Installing nautilus-open-any-terminal and starship - to work with Alacritty"
 sudo dnf install nautilus-python -y
+sudo dnf install pip -y
 pip install nautilus-open-any-terminal
 nautilus -q	# kill nautilus to load new extension
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal alacritty
