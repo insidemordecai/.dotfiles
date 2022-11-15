@@ -19,6 +19,13 @@ sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.co
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf install brave-browser -y
 
+echo "Installing XDM"
+curl -LO https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz
+mkdir xdm-setup-dir
+tar -xf xdm-setup*tar.xz -C xdm-setup-dir/
+sudo ./xdm-setup-dir/install.sh
+rm xdm-setup* -rf
+
 echo "Installing ProtonVPN"
 sudo rpm -i https://repo.protonvpn.com/fedora-36-stable/release-packages/protonvpn-stable-release-1.0.1-1.noarch.rpm
 sudo dnf update -y
