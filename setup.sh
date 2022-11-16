@@ -7,3 +7,4 @@ sudo dnf install stow -y
 stow alacritty
 stow bash
 stow vim
+stow starship
