@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo "INSTALLING GNOME TWEAKS, ALACRITTY, STEAM, HTOP, GTHUMB, SOLAAR, VIM, AUTOJUMP"
-sudo dnf install -y gnome-tweaks alacritty steam htop gthumb solaar vim autojump
+echo "INSTALLING GNOME TWEAKS, ALACRITTY, STEAM, HTOP, GTHUMB, SOLAAR, VIM, AUTOJUMP HUGO"
+sudo dnf install -y gnome-tweaks alacritty steam htop gthumb solaar vim autojump hugo
 echo ""
 
 echo "INSTALLING VS CODE"
