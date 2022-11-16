@@ -6,5 +6,6 @@ sudo dnf install stow -y
 # stow dotfiles
 stow alacritty
 stow bash
-stow vim
+stow git
 stow starship
+stow vim
