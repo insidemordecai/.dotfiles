@@ -6,7 +6,10 @@ alias la='ls -A'
 # interactive operations
 alias cp='cp -i'
 alias mv='mv -i'
-alias rm='rm -i'
+# alias rm='rm -i #comment out if using trash-cli
+
+# replace rm with trash-cli 
+alias rm='trash -v' 
 
 # changing directories
 alias ..='cd ..'
