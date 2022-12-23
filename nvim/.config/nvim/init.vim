@@ -1,5 +1,7 @@
 " --- General
 
+let mapleader = " "
+
 syntax enable           " enable syntax processing
 set tabstop=4
 set softtabstop=4
@@ -12,7 +14,6 @@ set numberwidth=1       " columns used for line numbers
 set relativenumber
 set incsearch           " highlight matched text when searching  
 set nohlsearch          " disable highlighting of search results
-set undofile            " save undo history
 set mouse=a             " enable mouse support
 set ignorecase          " default to case insensitive search
 set smartcase           " use case sensitive search if pattern includes uppercase letter
@@ -29,6 +30,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'dracula/vim',{'as':'dracula'}     " colour scheme
 Plug 'nvim-lualine/lualine.nvim'        " status line
 Plug 'kyazdani42/nvim-web-devicons'     " devicons
+Plug 'nvim-tree/nvim-tree.lua'          " file explorer
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -46,3 +48,9 @@ lua require('insidemordecai')
 set termguicolors       " better colours
 colorscheme dracula
 set background=dark
+
+" --- Undo and Swaps
+
+set undofile            " save undo history
+set undodir=~/.config/nvim/undodir
+set directory=~/.config/nvim/swaps
