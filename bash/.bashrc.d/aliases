@@ -4,7 +4,6 @@ alias vi='nvim'
 # listing operation
 alias ls='ls --color=auto'
 alias ll='ls -alF'
-alias la='ls -A'
 
 # interactive operations
 alias cp='cp -i'
@@ -36,6 +35,6 @@ alias gpl='git pull'
 alias dnf='sudo dnf'
 alias dnfi='sudo dnf install'
 alias dnfrm='sudo dnf remove'
-alias upall='sudo dnf update -y && flatpak update -y'
 alias flati='flatpak install'
 alias flatrm='flatpak remove'
+alias upall='sudo dnf update -y && flatpak update -y'
