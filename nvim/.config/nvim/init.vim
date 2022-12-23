@@ -21,6 +21,7 @@ set noshowmode          " hide default status line
 set signcolumn=yes      " enable column for signs such as gitsigns
 set encoding=UTF-8      " set utf8 as standard encoding
 set wildmenu            " enhance command menu completion
+set cursorline          " highlight the current line
 
 " --- Plugins
 
