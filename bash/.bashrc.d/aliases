@@ -1,3 +1,6 @@
+# set vi to nvim
+alias vi='nvim'
+
 # listing operation
 alias ls='ls --color=auto'
 alias ll='ls -alF'
