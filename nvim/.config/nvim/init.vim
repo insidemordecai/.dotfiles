@@ -23,6 +23,7 @@ set encoding=UTF-8      " set utf8 as standard encoding
 set wildmenu            " enhance command menu completion
 set cursorline          " highlight the current line
 set scrolloff=8         " alway have 8 lines above/below
+set hidden              " easily keep multiple buffers
 
 " --- Plugins
 
@@ -30,6 +31,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 " General
 Plug 'dracula/vim',{'as':'dracula'}     " colour scheme
+Plug 'joshdick/onedark.vim'
 Plug 'nvim-lualine/lualine.nvim'        " status line
 Plug 'kyazdani42/nvim-web-devicons'     " devicons
 Plug 'nvim-tree/nvim-tree.lua'          " file explorer
@@ -64,7 +66,7 @@ lua require('insidemordecai')
 " --- Colours
 
 set termguicolors       " better colours
-colorscheme dracula
+colorscheme onedark
 set background=dark
 
 " --- Undo and Swaps
