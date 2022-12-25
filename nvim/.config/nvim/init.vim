@@ -40,7 +40,6 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make'}
 " Git
-Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
 " LSP
 Plug 'neovim/nvim-lspconfig'
