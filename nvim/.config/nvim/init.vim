@@ -3,6 +3,7 @@
 let mapleader = " "
 
 syntax enable                           " enable syntax processing
+set termguicolors                       " better colours
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -24,19 +25,23 @@ set wildmenu                            " enhance command menu completion
 set cursorline                          " highlight the current line
 set scrolloff=8                         " alway have 8 lines above/below
 set hidden                              " easily keep multiple buffers
+set clipboard=unnamedplus
 
 " --- Plugins
 
 call plug#begin('~/.config/nvim/plugged')
 
 " General
+Plug 'nvim-lua/plenary.nvim'            " dependency for multiple plugins
 Plug 'dracula/vim',{'as':'dracula'}     " colour scheme
 Plug 'joshdick/onedark.vim'
 Plug 'nvim-lualine/lualine.nvim'        " status line
 Plug 'kyazdani42/nvim-web-devicons'     " devicons
 Plug 'nvim-tree/nvim-tree.lua'          " file explorer
+Plug 'windwp/nvim-autopairs'            " autoclose brackets, parens...
+Plug 'norcalli/nvim-colorizer.lua'      " highlight colours
+Plug 'numToStr/Comment.nvim'            " commenting with gc
 " Telescope
-Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make'}
 " Git
@@ -64,7 +69,6 @@ lua require('insidemordecai')
 
 " --- Colours
 
-set termguicolors                       " better colours
 colorscheme onedark
 set background=dark                     " we like it dark     
 
