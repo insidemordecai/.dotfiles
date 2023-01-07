@@ -41,7 +41,7 @@ o.background = "dark" -- we like it dark
 -- undo and swaps
 o.undofile = true -- save undo history
 o.undodir = HOME .. '/.vim/tmp/undo//'
-o.directory = HOME .. '/.vim/tmp/swaps//'
+o.swapfile = false -- avoid creating temp files
 
 -- map <leader> to space
 g.mapleader = " "
