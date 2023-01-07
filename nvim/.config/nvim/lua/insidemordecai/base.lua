@@ -35,7 +35,7 @@ o.smartcase = true -- use case sensitive search if pattern has uppercase letters
 o.hlsearch = false -- disable highlights after search
 
 -- colours
-local ok, _ = pcall(vim.cmd, "colorscheme onedark")
+vim.cmd('colorscheme onedark')
 o.background = "dark" -- we like it dark
 
 -- undo and swaps
