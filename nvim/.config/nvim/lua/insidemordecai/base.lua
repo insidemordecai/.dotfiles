@@ -18,15 +18,19 @@ o.smartindent = true
 o.number = true -- add line numbers
 o.relativenumber = true
 o.numberwidth = 1 -- columns used for line numbers
-o.mouse = "a" -- enable mouse support
+o.mouse = 'a' -- enable mouse support
 o.showmode = false -- hide default status line
-o.signcolumn = "yes" -- enable column for signs eg. gitsigns
-o.encoding = "utf-8" -- set utf8 as standard encoding
+o.signcolumn = 'yes' -- enable column for signs eg. gitsigns
 o.wildmenu = true -- enhance command menu completion
 o.cursorline = true -- highlight current line
 o.scrolloff = 8 -- always have 8 lines above/below
 o.hidden = true -- easily keep multiple buffers
-o.clipboard = "unnamedplus" -- allow using system clipboard
+o.clipboard = 'unnamedplus' -- make nvim and host clipboard work well
+
+-- encoding (set utf8 as standard encoding)
+vim.scriptencoding = 'utf-8'
+o.encoding = 'utf-8'
+o.fileencoding = 'utf-8'
 
 -- searching
 o.incsearch = true -- highlight matched text when searching
