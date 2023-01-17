@@ -30,5 +30,8 @@ unset rc
 # flutter sdk 
 export PATH="$PATH:$HOME/development/flutter/bin"
 
+# required for flutterfire-cli
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
 # Starship.rs prompt
 eval "$(starship init bash)"
