@@ -36,7 +36,6 @@ return packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim' -- better status line
   use 'kyazdani42/nvim-web-devicons' -- devicons
   use 'nvim-tree/nvim-tree.lua' -- file explorer
-  use 'windwp/nvim-autopairs' -- autoclose parens quotes...
   use 'norcalli/nvim-colorizer.lua' -- highlight colours
   use 'numToStr/Comment.nvim' -- commenting with gc
 
@@ -71,6 +70,19 @@ return packer.startup(function(use)
           {'rafamadriz/friendly-snippets'},
       }
   }
+
+  -- Treesitter
+  use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
+    }
+
+  -- Auto Closing
+  use 'windwp/nvim-autopairs' -- autoclose parens quotes...
+  use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
   if packer_bootstrap then
     require("packer").sync()
