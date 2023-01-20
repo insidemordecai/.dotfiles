@@ -4,17 +4,14 @@ HOME = os.getenv("HOME")
 local o = vim.opt
 local g = vim.g
 
-vim.cmd('syntax enable') -- enable syntax processing
-vim.api.nvim_command('filetype plugin indent on') -- filetype-specific indentation
-
 -- general
 o.termguicolors = true -- better colours
-o.tabstop = 4
-o.softtabstop = 4
-o.shiftwidth = 4
+o.tabstop = 2
+o.softtabstop = 2
+o.shiftwidth = 2
 o.expandtab = true
 o.autoindent = true
-o.smartindent = true
+vim.api.nvim_command('filetype plugin indent on') -- filetype-specific indentation
 o.number = true -- add line numbers
 o.relativenumber = true
 o.numberwidth = 1 -- columns used for line numbers
@@ -26,11 +23,9 @@ o.cursorline = true -- highlight current line
 o.scrolloff = 8 -- always have 8 lines above/below
 o.hidden = true -- easily keep multiple buffers
 o.clipboard = 'unnamedplus' -- make nvim and host clipboard work well
-
--- encoding (set utf8 as standard encoding)
-vim.scriptencoding = 'utf-8'
-o.encoding = 'utf-8'
-o.fileencoding = 'utf-8'
+o.fileencoding = 'utf-8' -- set utf8 as standard encoding
+o.iskeyword:append("-") -- consider string-string as whole word
+o.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 
 -- searching
 o.incsearch = true -- highlight matched text when searching
