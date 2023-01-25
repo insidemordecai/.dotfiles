@@ -11,7 +11,7 @@ alias mv='mv -i'
 # alias rm='rm -i #comment out if using trash-cli
 
 # replace rm with trash-cli 
-alias rm='trash -v' 
+alias rm='trash' 
 
 # changing directories
 alias ..='cd ..'
@@ -19,7 +19,7 @@ alias .2='cd ../..'
 alias .3='cd ../../..'
 
 # making directories 
-alias mkdir='mkdir -pv' 
+alias mkdir='mkdir -p' 
 
 # git 
 alias gs='git status'
