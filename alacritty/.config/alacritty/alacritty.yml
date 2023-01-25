@@ -21,55 +21,38 @@ cursor:
   style:
     blinking: Always
 
-# color schemes
-schemes:
-  # One Dark by Atom
-  one-dark: &one-dark
-    primary:
-      background: '#282c34'
-      foreground: '#abb2bf'
-    cursor:
-    text:       CellBackground
-    cursor:     '#528bff' # syntax-cursor-color
-  selection:
-    text:       CellForeground
-    background: '#3e4451' # syntax-selection-color
+colors: # One Dark
+  # Default colors
+  primary:
+    background: '0x282c34'
+    foreground: '0xabb2bf'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x282c34'
+    cursor: '0xabb2bf'
+
+  # Normal colors
   normal:
-    black:      '#5c6370' # mono-3
-    red:        '#e06c75' # red 1
-    green:      '#98c379'
-    yellow:     '#e5c07b' # orange 2
-    blue:       '#61afef'
-    magenta:    '#c678dd'
-    cyan:       '#56b6c2'
-    white:      '#828997' # mono-2
+    black:   '0x282c34'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xe5c07b'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0xabb2bf'
 
-  # Dracula
-  dracula: &dracula
-    primary:
-      background: '#282a36'
-      foreground: '#f8f8f2'
-    normal:
-      black:   '#000000'
-      red:     '#ff5555'
-      green:   '#50fa7b'
-      yellow:  '#f1fa8c'
-      blue:    '#caa9fa'
-      magenta: '#ff79c6'
-      cyan:    '#8be9fd'
-      white:   '#bfbfbf'
-    bright:
-      black:   '#575b70'
-      red:     '#ff6e67'
-      green:   '#5af78e'
-      yellow:  '#f4f99d'
-      blue:    '#caa9fa'
-      magenta: '#ff92d0'
-      cyan:    '#9aedfe'
-      white:   '#e6e6e6' 
-
-# set default color scheme
-colors: *dracula
+  # Bright colors
+  bright:
+    black:   '0x545862'
+    red:     '0xd19a66'
+    green:   '0x353b45'
+    yellow:  '0x3e4451'
+    blue:    '0x565c64'
+    magenta: '0xb6bdca'
+    cyan:    '0xbe5046'
+    white:   '0xc8ccd4'
 
 key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
