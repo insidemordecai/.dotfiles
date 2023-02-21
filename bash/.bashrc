@@ -26,6 +26,9 @@ fi
 
 unset rc
 
+# set default text editor
+export VISUAL=nvim
+export EDITOR="$VISUAL"
 
 # flutter sdk 
 export PATH="$PATH:$HOME/development/flutter/bin"
