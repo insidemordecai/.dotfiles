@@ -39,10 +39,6 @@ return packer.startup(function(use)
   use 'norcalli/nvim-colorizer.lua' -- highlight colours
   use 'numToStr/Comment.nvim' -- commenting with gc
 
-  -- Telescope
-  use 'nvim-telescope/telescope.nvim'
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
-
   -- Git
   use 'lewis6991/gitsigns.nvim' -- show changes to the left
 
