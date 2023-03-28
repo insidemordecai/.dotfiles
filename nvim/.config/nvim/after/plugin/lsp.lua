@@ -4,7 +4,7 @@ lsp.preset('recommended')
 lsp.ensure_installed({
     'html',
     'cssls',
-    'sumneko_lua',
+    'lua_ls'
 })
 
 lsp.nvim_workspace()
