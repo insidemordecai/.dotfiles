@@ -3,7 +3,8 @@ alias vi='nvim'
 
 # listing operation
 alias ls='ls --color=auto'
-alias ll='ls -alF'
+alias ll='ls -l'
+alias la='ls -lA'
 
 # interactive operations
 alias cp='cp -i'
