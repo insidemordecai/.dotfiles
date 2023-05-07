@@ -26,6 +26,7 @@ o.clipboard = 'unnamedplus' -- make nvim and host clipboard work well
 o.fileencoding = 'utf-8' -- set utf8 as standard encoding
 o.iskeyword:append("-") -- consider string-string as whole word
 o.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
+o.wrap = false -- disable word wrapping
 
 -- searching
 o.incsearch = true -- highlight matched text when searching
