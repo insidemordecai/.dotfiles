@@ -1,34 +1,34 @@
-# set vi to nvim
+# Set vi to nvim
 alias vi='nvim'
 
-# listing operation
+# Listing operation
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -lA'
 
-# interactive operations
+# Interactive operations
 alias cp='cp -i'
 alias mv='mv -i'
 # alias rm='rm -i #comment out if using trash-cli
 
-# replace rm with trash-cli 
+# Replace rm with trash-cli 
 alias rm='trash' 
 
-# changing directories
+# Changing directories
 alias ..='cd ..'
 alias .2='cd ../..'
 alias .3='cd ../../..'
 
-# making directories 
+# Making parent directories 
 alias mkdir='mkdir -p' 
 
-# git 
+# Git 
 alias gs='git status'
 alias ga='git add'
 alias gaa='git add .'
 alias gc='git commit -m'
 alias gac='git add . && git commit -m' # only when sure
-alias gclone='git clone'
+alias gcl='git clone'
 alias gp='git push'
 alias gpl='git pull'
 
@@ -39,3 +39,6 @@ alias dnfrm='sudo dnf remove'
 alias flati='flatpak install'
 alias flatrm='flatpak remove'
 alias upall='sudo dnf update -y && flatpak update -y'
+
+# System
+alias sus="echo 'sudo systemctl suspend' | sudo at now + 2 minutes"
