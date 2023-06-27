@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo "INSTALLING GNOME TWEAKS, ALACRITTY, STEAM, HTOP, GTHUMB, SOLAAR, VIM, AUTOJUMP HUGO TRASH"
-sudo dnf install -y gnome-tweaks alacritty steam htop gthumb solaar vim autojump hugo trash-cli
+echo "INSTALLING GNOME TWEAKS, ALACRITTY, STEAM, HTOP, GTHUMB, SOLAAR, NVIM, AUTOJUMP HUGO TRASH"
+sudo dnf install -y gnome-tweaks alacritty steam htop gthumb solaar nvim autojump hugo trash-cli
 echo ""
 
 echo "INSTALLING VS CODE"
@@ -48,6 +48,6 @@ rm xdm-setup* -rf
 echo ""
 
 echo "INSTALLING PROTONVPN"
-sudo rpm -i https://repo.protonvpn.com/fedora-36-stable/release-packages/protonvpn-stable-release-1.0.1-1.noarch.rpm
+sudo rpm -i https://repo.protonvpn.com/fedora-38-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.1-2.noarch.rpm
 sudo dnf update -y
 sudo dnf install protonvpn -y

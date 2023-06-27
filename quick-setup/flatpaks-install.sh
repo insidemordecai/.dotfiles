@@ -1,5 +1,8 @@
 #!/bin/bash
 
-echo "Installing Extension Manager, Firefox, Discord, Spotify, Shortwave, VLC, Deluge"
+echo "Installing Flatpak Apps"
 
-flatpak install flathub com.mattjakeman.ExtensionManager org.mozilla.firefox com.discordapp.Discord com.spotify.Client de.haeckerfelix.Shortwave org.videolan.VLC org.deluge_torrent.deluge -y
+flatpak install flathub com.mattjakeman.ExtensionManager org.mozilla.firefox com.spotify.Client org.videolan.VLC org.qbittorrent.qBittorrent com.github.iwalton3.jellyfin-media-player  -y
+
+echo "Setting Wayland as display server for Firefox"
+sudo flatpak override --env=MOZ_ENABLE_WAYLAND=1

@@ -2,8 +2,6 @@
 
 echo "CONFIGURING DNF..."
 echo 'max_parallel_downloads=10' | sudo tee -a /etc/dnf/dnf.conf
-echo 'fastestmirror=True' | sudo tee -a /etc/dnf/dnf.conf
-echo 'deltarpm=True' | sudo tee -a /etc/dnf/dnf.conf
 echo 'defaultyes=True' | sudo tee -a /etc/dnf/dnf.conf
 echo ""
 
@@ -56,11 +54,9 @@ sudo dnf copr enable nickavem/adw-gtk3 -y
 sudo dnf install adw-gtk3 -y
 echo ""
 
-echo "LAST STEP"
-
 echo "SETTING UP CODING ENVIRONMENT/CONFIG FILES"
 mkdir ~/development
-mkdir ~/programming
+mkdir ~/projects
 cd
 git clone https://github.com/insidemordecai/.dotfiles.git
 
