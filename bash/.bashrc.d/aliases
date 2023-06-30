@@ -3,7 +3,6 @@ alias vi='nvim'
 
 # Listing operation
 alias ls='ls --color=auto'
-alias ll='ls -l'
 alias la='ls -lA'
 
 # Interactive operations
@@ -25,15 +24,12 @@ alias mkdir='mkdir -p'
 # Git 
 alias gs='git status'
 alias ga='git add'
-alias gaa='git add .'
 alias gc='git commit -m'
 alias gac='git add . && git commit -m' # only when sure
-alias gcl='git clone'
 alias gp='git push'
 alias gpl='git pull'
 
 # DNF package manager and Flatpak
-alias dnf='sudo dnf'
 alias dnfi='sudo dnf install'
 alias dnfrm='sudo dnf remove'
 alias flati='flatpak install'
