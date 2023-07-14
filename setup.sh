@@ -7,6 +7,6 @@ sudo dnf install stow -y
 stow alacritty
 stow bash
 stow git
+stow nvim
 stow starship
 stow vim
-stow nvim
