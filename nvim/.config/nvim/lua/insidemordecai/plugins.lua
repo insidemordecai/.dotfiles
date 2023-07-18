@@ -69,7 +69,6 @@ return packer.startup(function(use)
 
   -- Auto Closing
   use 'windwp/nvim-autopairs' -- autoclose parens quotes...
-  use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
   if packer_bootstrap then
     require("packer").sync()
