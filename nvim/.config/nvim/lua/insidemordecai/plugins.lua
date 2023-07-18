@@ -67,15 +67,6 @@ return packer.startup(function(use)
       }
   }
 
-  -- Treesitter
-  use {
-        'nvim-treesitter/nvim-treesitter',
-        run = function()
-            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-            ts_update()
-        end,
-    }
-
   -- Auto Closing
   use 'windwp/nvim-autopairs' -- autoclose parens quotes...
   use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
