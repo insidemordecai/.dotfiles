@@ -1,47 +1,52 @@
 HOME = os.getenv("HOME")
 
 -- for conciseness
-local o = vim.opt
+local opt = vim.opt
 local g = vim.g
+local cmd = vim.cmd
+local api = vim.api
 
 -- general
-o.termguicolors = true -- better colours
-o.tabstop = 2
-o.softtabstop = 2
-o.shiftwidth = 2
-o.expandtab = true
-o.autoindent = true
-vim.api.nvim_command('filetype plugin indent on') -- filetype-specific indentation
-o.number = true -- add line numbers
-o.relativenumber = true
-o.numberwidth = 1 -- columns used for line numbers
-o.mouse = 'a' -- enable mouse support
-o.showmode = false -- hide default status line
-o.signcolumn = 'yes' -- enable column for signs eg. gitsigns
-o.wildmenu = true -- enhance command menu completion
-o.cursorline = true -- highlight current line
-o.scrolloff = 8 -- always have 8 lines above/below
-o.hidden = true -- easily keep multiple buffers
-o.clipboard = 'unnamedplus' -- make nvim and host clipboard work well
-o.fileencoding = 'utf-8' -- set utf8 as standard encoding
-o.iskeyword:append("-") -- consider string-string as whole word
-o.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
-o.wrap = false -- disable word wrapping
+opt.fileencoding = 'utf-8' -- set utf8 as default encoding
+opt.number = true
+opt.relativenumber = true
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
+opt.autoindent = true
+api.nvim_command('filetype plugin indent on') -- filetype-specific indentation
+opt.mouse = 'a' -- enable mouse support
+opt.cursorline = true -- highlight current line
+opt.scrolloff = 8 -- always have 8 line to screen edge above/below when scrolling
+opt.signcolumn = 'yes' -- enable column for signs after numbers eg. git signs
+opt.iskeyword:append("-") -- consider hello-world as whole word
+opt.clipboard:append("unnamedplus") -- use system clipboard as default register
+opt.showmode = false -- hide default status line
+opt.cmdheight = 1
+opt.hidden = true -- easily keep multiple buffers
+opt.wrap = false
+opt.numberwidth = 1 -- columns use for line numbers
+
+-- appearance
+opt.termguicolors = true
+opt.background = "dark" -- use dark variant of theme when available
+cmd("colorscheme onedark")
 
 -- searching
-o.incsearch = true -- highlight matched text when searching
-o.ignorecase = true -- default to case insensitive search
-o.smartcase = true -- use case sensitive search if pattern has uppercase letters
-o.hlsearch = false -- disable highlights after search
-
--- colours
-vim.cmd('colorscheme onedark')
-o.background = "dark" -- we like it dark
+opt.incsearch = true -- highlight matched text when searching
+opt.ignorecase = true -- default to case insensitive search
+opt.smartcase = true -- use case sensitive search if pattern has uppercase letter
+opt.hlsearch = false -- disable highlights after search
 
 -- undo and swaps
-o.undofile = true -- save undo history
-o.undodir = HOME .. '/.vim/tmp/undo//'
-o.swapfile = false -- avoid creating temp files
+opt.undofile = true -- save undo history
+opt.undodir = HOME .. '/.vim/tmp/undo//'
+opt.swapfile = false -- avoid creating temp files
+
+-- split windows
+opt.splitright = true -- split vertical window to the right
+opt.splitbelow = true -- split horizontal window to the bottom
 
 -- map <leader> to space
 g.mapleader = " "
