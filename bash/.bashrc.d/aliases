@@ -3,6 +3,7 @@ alias vi='nvim'
 
 # Listing operation
 alias ls='ls --color=auto'
+alias ll='ls -lAF'
 alias la='ls -lA'
 
 # Interactive operations
