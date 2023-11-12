@@ -31,7 +31,6 @@ opt.numberwidth = 1 -- columns use for line numbers
 -- appearance
 opt.termguicolors = true
 opt.background = "dark" -- use dark variant of theme when available
-cmd("colorscheme onedark")
 
 -- searching
 opt.incsearch = true -- highlight matched text when searching

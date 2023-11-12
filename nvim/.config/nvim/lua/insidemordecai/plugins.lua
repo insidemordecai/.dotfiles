@@ -25,12 +25,17 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- packer can manage itself
 
   use 'nvim-lua/plenary.nvim' -- common dependancy
-  use 'joshdick/onedark.vim' -- colour scheme
   use 'nvim-lualine/lualine.nvim' -- status line
   use 'kyazdani42/nvim-web-devicons' -- icons
   use 'nvim-tree/nvim-tree.lua' -- file tree
   use 'norcalli/nvim-colorizer.lua' -- highlight colours
   use 'numToStr/Comment.nvim' -- commenting with gc
+  
+  -- colour scheme
+  use { 
+    'joshdick/onedark.vim',
+    config = function() vim.cmd("colorscheme onedark") end
+  }
 
   -- Git integration
   use 'lewis6991/gitsigns.nvim' -- show signs to the left
