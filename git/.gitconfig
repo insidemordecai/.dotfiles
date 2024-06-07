@@ -2,7 +2,7 @@
 	name = Mordecai K.
 	email = 39312305+insidemordecai@users.noreply.github.com
 [core]
-	editor = vim
+	editor = nvim
 [init]
 	defaultBranch = main
 [credential "https://github.com"]
