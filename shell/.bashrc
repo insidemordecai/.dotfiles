@@ -16,8 +16,8 @@ export PATH
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-if [ -d ~/.bashrc.d ]; then
-	for rc in ~/.bashrc.d/*; do
+if [ -d ~/.shell.d ]; then
+	for rc in ~/.shell.d/*; do
 		if [ -f "$rc" ]; then
 			. "$rc"
 		fi
@@ -37,6 +37,9 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # Starship.rs prompt
 eval "$(starship init bash)"
+
+# Zoxide 
+eval "$(zoxide init bash)"
 
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
