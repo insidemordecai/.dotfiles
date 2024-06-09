@@ -12,6 +12,9 @@ unset rc
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
+# Flutter SDK
+export PATH=$HOME/development/flutter/bin:$PATH
+
 # Starship prompt
 eval "$(starship init zsh)"
 
