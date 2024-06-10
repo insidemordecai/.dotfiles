@@ -33,8 +33,8 @@ return require('packer').startup(function(use)
   
   -- colour scheme
   use { 
-    'joshdick/onedark.vim',
-    config = function() vim.cmd("colorscheme onedark") end
+    'catppuccin/nvim', as = 'catppuccin',
+    config = function() vim.cmd("colorscheme catppuccin-mocha") end
   }
 
   -- Git integration

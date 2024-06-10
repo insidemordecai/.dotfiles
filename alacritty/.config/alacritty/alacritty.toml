@@ -17,8 +17,6 @@ style = "Regular"
 
 [window]
 decorations = "Buttonless"
-opacity = 0.85
-blur = true
 
 [window.padding]
 x = 10
