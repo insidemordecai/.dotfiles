@@ -33,3 +33,6 @@ setopt hist_verify
 # Completion using arrow keys (based on history)
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
+
+# zsh-autosuggestions plugin via Homebrew
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
