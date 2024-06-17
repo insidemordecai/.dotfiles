@@ -36,3 +36,6 @@ bindkey '^[[B' history-search-forward
 
 # zsh-autosuggestions plugin via Homebrew
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# zsh-syntax-highlighting plugin via Homebrew
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
