@@ -34,8 +34,14 @@ setopt hist_verify
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 
+
+# NOTE: Load last
 if [[ `uname` == "Darwin" ]]; then
-  # zsh-autosuggestions & zsh-syntax-highlighting plugins via Homebrew
+  # zsh-autosuggestions & zsh-syntax-highlighting plugins via Homebrew on macOS
   source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
   source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+else 
+  # Linux
+  source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 
 fi
