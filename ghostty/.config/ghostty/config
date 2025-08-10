@@ -1,0 +1,13 @@
+theme = catppuccin-mocha
+font-size = 14
+
+cursor-style = block
+cursor-style-blink = true
+
+window-padding-x = 10
+window-padding-y = 10
+
+macos-titlebar-style = transparent
+macos-option-as-alt = true
+macos-auto-secure-input = true
+macos-secure-input-indication = true
