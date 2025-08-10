@@ -7,6 +7,8 @@ cursor-style-blink = true
 window-padding-x = 10
 window-padding-y = 10
 
+quit-after-last-window-closed = true
+
 macos-titlebar-style = transparent
 macos-option-as-alt = true
 macos-auto-secure-input = true
