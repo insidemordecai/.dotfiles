@@ -12,7 +12,7 @@ blinking = "Always"
 size = 13.0
 
 [font.normal]
-family = "Liga SFMono Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [window]
