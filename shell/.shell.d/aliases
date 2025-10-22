@@ -2,10 +2,16 @@
 alias vi='nvim'
 alias vim='nvim'
 
-# Listing operation
-alias ls='ls --color=auto'
-alias ll='ls -lAF'
-alias la='ls -lA'
+# # Listing operation
+# alias ls='ls --color=auto'
+# alias ll='ls -lAF'
+# alias la='ls -lA'
+
+# Listing operations with eza
+alias ls='eza -lh --group-directories-first --icons=auto'
+alias la='ls -a'
+alias lt='eza --tree --level=2 --long --icons --git'
+alias lta='lt -a'
 
 # Interactive operations
 alias cp='cp -i'
@@ -27,7 +33,7 @@ alias mkdir='mkdir -p'
 # Git 
 alias gs='git status'
 alias ga='git add'
-alias gc='git commit -m'
+alias gcm='git commit -m'
 alias gac='git add . && git commit -m' # only when sure
 alias gp='git push'
 alias gpl='git pull'
