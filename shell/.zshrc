@@ -22,7 +22,9 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 # Homebrew on Linux
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+if [[ $(uname) == "Linux" && -d /home/linuxbrew/.linuxbrew/bin ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+fi
 
 # History setup
 HISTFILE=$HOME/.zhistory
