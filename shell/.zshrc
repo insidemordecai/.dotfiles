@@ -8,7 +8,7 @@ if [ -d ~/.shell.d ]; then
 fi
 unset rc
 
-# set detault text editor
+# set default text editor
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
@@ -20,6 +20,9 @@ eval "$(starship init zsh)"
 
 # Zoxide
 eval "$(zoxide init zsh)"
+
+# Homebrew on Linux
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 
 # History setup
 HISTFILE=$HOME/.zhistory
@@ -34,14 +37,16 @@ setopt hist_verify
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 
-
-# NOTE: Load last
+# Load last
 if [[ `uname` == "Darwin" ]]; then
   # zsh-autosuggestions & zsh-syntax-highlighting plugins via Homebrew on macOS
   source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
   source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 else 
-  # Linux
-  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-  source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 
+  # Linux: dynamic locate (Debian, Arch, etc.)
+  AS_FILE=$(plocate -r '/zsh-autosuggestions\.zsh$' | head -1)
+  SH_FILE=$(plocate -r '/zsh-syntax-highlighting\.zsh$' | head -1)
+
+  [[ -n "$AS_FILE" ]] && source "$AS_FILE"
+  [[ -n "$SH_FILE" ]] && source "$SH_FILE"
 fi
