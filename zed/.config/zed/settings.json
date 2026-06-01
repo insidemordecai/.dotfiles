@@ -46,4 +46,14 @@
   "tabs": {
     "file_icons": true,
   },
+  "languages": {
+    "HTML": {
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"],
+        },
+      },
+    },
+  },
 }
