@@ -1,0 +1,12 @@
+[
+  {
+    "label": "Live Server",
+    // "command": "python3 -m http.server 8000",
+    "command": "npx live-server",
+    // "command": "bun x live-server . --port=5500",
+    // "command": "bun run dev",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+  },
+]
