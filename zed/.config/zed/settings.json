@@ -8,8 +8,8 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "disable_ai": true,
-  "vim_mode": true,
   "base_keymap": "VSCode",
+  "vim_mode": true,
   "icon_theme": "Warm Charmed Icons",
   "theme": {
     "mode": "dark",
@@ -35,6 +35,15 @@
   "gutter": {
     "min_line_number_digits": 0, // reduce the gutter width
   },
+  "ui_font_family": ".SystemUIFont",
   "ui_font_size": 16,
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "buffer_font_size": 15,
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+  },
+  "tabs": {
+    "file_icons": true,
+  },
 }
