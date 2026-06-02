@@ -22,6 +22,9 @@
       "border": "#1E1E2E",
     },
   },
+  "project_panel": {
+    "dock": "left",
+  },
   "telemetry": {
     "diagnostics": true,
     "metrics": false,
