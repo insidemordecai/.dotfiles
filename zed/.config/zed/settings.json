@@ -7,9 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "disable_ai": true,
+  "disable_ai": false,
   "base_keymap": "VSCode",
   "vim_mode": true,
+  "relative_line_numbers": "enabled",
   "icon_theme": "Warm Charmed Icons",
   "theme": {
     "mode": "dark",
@@ -22,6 +23,11 @@
       "border": "#1E1E2E",
     },
   },
+  "colorize_brackets": true,
+  "indent_guides": {
+		"enabled": true,
+		"coloring": "indent_aware",
+	},
   "project_panel": {
     "dock": "left",
   },
@@ -38,10 +44,15 @@
   "gutter": {
     "min_line_number_digits": 0, // reduce the gutter width
   },
+  "status_bar": {
+      "active_language_button": false,
+      "cursor_position_button": false,
+    },
   "ui_font_family": ".SystemUIFont",
   "ui_font_size": 16,
   "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "buffer_font_size": 15,
+  "show_whitespaces": "trailing",
   "toolbar": {
     "breadcrumbs": false,
     "quick_actions": false,
