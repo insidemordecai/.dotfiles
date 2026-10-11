@@ -7,64 +7,59 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "disable_ai": false,
-  "base_keymap": "VSCode",
-  "vim_mode": true,
-  "relative_line_numbers": "enabled",
-  "icon_theme": "Warm Charmed Icons",
-  "theme": {
-    "mode": "dark",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha",
-  },
-  "theme_overrides": {
-    "Catppuccin Mocha": {
-      "border.variant": "#1E1E2E",
-      "border": "#1E1E2E",
+    "disable_ai": false,
+    "base_keymap": "VSCode",
+    "vim_mode": true,
+    "relative_line_numbers": "enabled",
+    "icon_theme": "Warm Charmed Icons",
+    "theme": {
+        "mode": "dark",
+        "light": "Catppuccin Latte",
+        "dark": "Catppuccin Mocha",
     },
-  },
-  "colorize_brackets": true,
-  "indent_guides": {
-		"enabled": true,
-		"coloring": "indent_aware",
-	},
-  "project_panel": {
-    "dock": "left",
-  },
-  "telemetry": {
-    "diagnostics": true,
-    "metrics": false,
-  },
-  "session": {
-    "trust_all_worktrees": true,
-  },
-  "scrollbar": {
-    "show": "never",
-  },
-  "gutter": {
-    "min_line_number_digits": 0, // reduce the gutter width
-  },
-  "status_bar": {
-      "active_language_button": false,
-      "cursor_position_button": false,
+    "theme_overrides": {
+        "Catppuccin Mocha": {
+            "border.variant": "#1E1E2E",
+            "border": "#1E1E2E",
+        },
     },
-  "ui_font_family": ".SystemUIFont",
-  "ui_font_size": 16,
-  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
-  "buffer_font_size": 15,
-  "show_whitespaces": "trailing",
-  "toolbar": {
-    "breadcrumbs": false,
-    "quick_actions": false,
-  },
-  "tabs": {
-    "file_icons": true,
-  },
-  "format_on_save": "on",
-  "formatter": {
-    "external": {
-      "command": "prettier",
-      "arguments": ["--stdin-filepath", "{buffer_path}"],
+    "colorize_brackets": true,
+    "indent_guides": {
+        "enabled": true,
+        "coloring": "indent_aware",
     },
-  },
+    "project_panel": {
+        "dock": "left",
+    },
+    "telemetry": {
+        "diagnostics": true,
+        "metrics": false,
+    },
+    "session": {
+        "trust_all_worktrees": true,
+    },
+    "scrollbar": {
+        "show": "never",
+    },
+    "gutter": {
+        "min_line_number_digits": 0, // reduce the gutter width
+    },
+    "status_bar": {
+        "active_language_button": false,
+        "cursor_position_button": false,
+    },
+    "ui_font_family": ".SystemUIFont",
+    "ui_font_size": 16,
+    "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+    "buffer_font_size": 15,
+    "show_whitespaces": "trailing",
+    "toolbar": {
+        "breadcrumbs": false,
+        "quick_actions": false,
+    },
+    "tabs": {
+        "file_icons": true,
+    },
+    "format_on_save": "on",
+    "formatter": "prettier",
 }
