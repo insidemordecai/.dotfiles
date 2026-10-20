@@ -1,17 +1,24 @@
 [user]
 	name = Mordecai K.
-	email = 39312305+insidemordecai@users.noreply.github.com
+  email = 39312305+insidemordecai@users.noreply.github.com
+  signingkey = ~/.ssh/id_ed25519.pub
 [core]
 	editor = nvim
 [init]
 	defaultBranch = main
+[http]
+  postBuffer = 524288000
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
 [credential "https://github.com"]
 	helper = 
-	helper = !/usr/bin/gh auth git-credential
+	helper = !gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = 
-	helper = !/usr/bin/gh auth git-credential
-[http]
-	postBuffer = 524288000
-[ssh]
-	postBuffer = 524288000
+	helper = !gh auth git-credential
