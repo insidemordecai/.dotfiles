@@ -26,6 +26,9 @@ if [[ $(uname) == "Linux" && -d /home/linuxbrew/.linuxbrew/bin ]]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 fi
 
+# opencode
+export PATH=$HOME/.opencode/bin:$PATH
+
 # History setup
 HISTFILE=$HOME/.zhistory
 SAVEHIST=1000
